@@ -265,7 +265,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const btnGuardar = document.getElementById('btnGuardar');
     const btnLogin = document.getElementById('btnLogin');
     const btnExportarExcel = document.getElementById('btnExportarExcel');
-    const btnCargarExcel = document.getElementById('btnCargarExcel');
+    const btnCargarExcel = document.getElementById('btnActualizar');
 
     // Cargar datos del servidor al inicio si estamos en la página de administración
     if (document.getElementById('dataTable')) {
