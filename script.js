@@ -3,7 +3,7 @@ let surveyData = [];
 const ADMIN_USERNAME = "admin";
 const ADMIN_PASSWORD = "admin123";
 const EXCEL_FILE_NAME = "encuestas.xlsx"; // Nombre del archivo Excel a exportar
-const API_URL = 'http://localhost:3000/api/surveys'; // Asegúrate de que coincida con el puerto de tu backend
+const API_URL = 'https://turismo-4d70b0ba9968.herokuapp.com/'; // Asegúrate de que coincida con el puerto de tu backend
 
 // Funciones utilitarias
 function getCurrentDateTime() {
@@ -36,6 +36,7 @@ async function saveSurveyToServer(data) {
     }
 }
 
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'https://turismo-4d70b0ba9968.herokuapp.com/'; // Para React
 // Función para cargar datos desde el servidor
 async function loadSurveyDataFromServer() {
     try {
