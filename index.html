@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Encuesta</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Sistema de Encuestas Turísticas</h1>
+            <nav>
+                <a href="login.html" class="admin-link">Administración</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="survey-section">
+            <h2>Formulario de Encuesta</h2>
+            <form id="surveyForm" class="survey-form">
+                <fieldset>
+                    <legend>Datos Sociodemográficos</legend>
+                    
+                    <div class="form-group">
+                        <label for="nombres">Nombres:</label>
+                        <input type="text" id="Nombres" required class="form-input">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="Apellidos" required class="form-input">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="edad">Edad:</label>
+                        <input type="number" id="Edad" min="1" max="120" >
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="ciudad">Ciudad o Lugar de Residencia:</label>
+                        <input type="text" id="Ciudad" required class="form-input">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="Nivel Instrucción">Nivel de Instrucción:</label>
+                        <select id="Nivel Instrucción" class="form-select">
+                            <option value="primaria">Primaria</option>
+                            <option value="secundaria">Secundaria</option>
+                            <option value="superior" selected>Superior</option>
+                            <option value="postgrado">Postgrado</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="ocupacion">Ocupación o Actividad Económica:</label>
+                        <input type="text" id="Ocupación" required class="form-input">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Parámetros Turísticos</legend>
+                    
+                    <div class="form-group">
+                        <label for="motivoVisita">Motivo de la Visita:</label>
+                        <select id="Motivo Visita" class="form-select">
+                            <option value="recreacion">Recreación</option>
+                            <option value="educativo">Educativo</option>
+                            <option value="familiar">Familiar</option>
+                            <option value="negocios">Negocios</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="transporte">Medio de Transporte Utilizado:</label>
+                        <input type="text" id="Transporte" required class="form-input">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="actividades">Actividades Realizadas:</label>
+                        <input type="text" id="Actividades" required class="form-input">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="Frecuencia">Frecuencia de Visita:</label>
+                        <select id="Frecuencia" class="form-select">
+                            <option value="primera vez">Primera vez</option>
+                            <option value="ocasional">Ocasional</option>
+                            <option value="frecuente">Frecuente</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="satisfaccion">Nivel de Satisfacción (1-5):</label>
+                        <select id="Satisfacción" class="form-select">
+                            <option value="1">1 (Muy Insatisfecho)</option>
+                            <option value="2">2 (Insatisfecho)</option>
+                            <option value="3">3 (Neutral)</option>
+                            <option value="4">4 (Satisfecho)</option>
+                            <option value="5" selected>5 (Muy Satisfecho)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="opinion">Opinión General:</label>
+                        <textarea id="Opinión" rows="4" required class="form-textarea"></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="button" id="btnGuardar" class="btn btn-primary">Guardar</button>
+                    <button type="reset" class="btn btn-secondary">Limpiar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Sistema de Encuestas Turísticas &copy; 2025</p>
+        </div>
+    </footer>
+</body>
+</html>
