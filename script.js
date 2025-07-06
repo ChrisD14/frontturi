@@ -72,7 +72,7 @@ function generateExcelExport() {
 }
 
 // Función para cargar datos desde un archivo Excel seleccionado por el usuario
-async function cargarDesdeExcel() {
+/*async function cargarDesdeExcel() {
        const loadingIndicator = document.getElementById('loadingIndicator');
        if (!loadingIndicator) {
            console.error('El elemento loadingIndicator no se encontró en el DOM.');
@@ -122,7 +122,7 @@ async function cargarDesdeExcel() {
         reader.readAsArrayBuffer(file);
     };
     input.click(); // Simular clic en el input de archivo
-}
+}*/
 
 
 // Renderiza la tabla de datos en la página de administración
