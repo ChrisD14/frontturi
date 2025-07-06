@@ -336,9 +336,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Configurar Cargar desde Excel (en admin.html)
-    if (btnCargarExcel) {
+    /*if (btnCargarExcel) {
         btnCargarExcel.addEventListener('click', cargarDesdeExcel);
-    }
+    }*/
 
     // Renderizar datos y gráficos si estamos en la página de administración
     if (document.getElementById('dataTable')) {
