@@ -39,7 +39,7 @@ async function saveSurveyToServer(data) {
 // Función para cargar datos desde el servidor
 async function loadSurveyDataFromServer() {
     try {
-        const response = await fetch('${API_URL}/api/surveys');
+        const response = await fetch('https://turismo-4d70b0ba9968.herokuapp.com/');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
