@@ -36,7 +36,6 @@ async function saveSurveyToServer(data) {
     }
 }
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'https://turismo-4d70b0ba9968.herokuapp.com/'; // Para React
 // Función para cargar datos desde el servidor
 async function loadSurveyDataFromServer() {
     try {
